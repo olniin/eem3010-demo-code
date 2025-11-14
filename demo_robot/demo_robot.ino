@@ -51,6 +51,7 @@ void loop()
   distance = get_sensor_distance(US_TRIG, US_ECHO);
   object_detected = (distance <= 20) ? 1 : 0;
   line_data = get_line_sensor_data(LINE_L, LINE_M, LINE_R);
+  Serial.println(line_data);
   delay(100);
   digitalWrite(BUZZER, object_detected);
   angle = 180 / 7.0 * line_data;
