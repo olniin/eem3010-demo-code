@@ -1,2 +1,2 @@
-# eem3010-demo-code
-Code meant for demonstration in EEM3010.
+# EEM3010 Arduino Code
+This code is for demonstration purposes only.
