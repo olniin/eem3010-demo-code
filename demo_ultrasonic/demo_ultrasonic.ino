@@ -27,6 +27,7 @@ void loop()
   Serial.print("Distance: ");
   Serial.println(distance);
   (distance < 20) ? digitalWrite(BUZZER_PIN, 1) : digitalWrite(BUZZER_PIN, 0);
+  delay(100);
 }
 
 /*
