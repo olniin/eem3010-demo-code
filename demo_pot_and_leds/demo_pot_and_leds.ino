@@ -17,16 +17,15 @@
 #define ADC_RES 10
 #define ADC_REF 5.0
 
-const uint8_t led_array[5] = {LED_PIN_1, LED_PIN_2, LED_PIN_3, LED_PIN_4, LED_PIN_5};
+const uint8_t led_array[6] = {LED_PIN_1, LED_PIN_2, LED_PIN_3, LED_PIN_4, LED_PIN_5, PWM_LED_PIN};
 
 
 void setup()
 {
   Serial.begin(115200);
-  for (uint8_t i=0; i<5; i++) {
+  for (uint8_t i=0; i<6; i++) {
     pinMode(led_array[i], 1);
   }
-  pinMode(PWM_LED_PIN, 1);
 }
 
 
