@@ -93,7 +93,7 @@ uint8_t get_line_sensor_data(uint8_t line_l, uint8_t line_m, uint8_t line_r)
   ld = digitalRead(line_l);
   md = digitalRead(line_m);
   rd = digitalRead(line_r);
-  sensor_data = ((ld^1) << 2) + ((md^1) << 1) + (rd^1);
+  sensor_data = ((rd^1) << 2) + ((md^1) << 1) + (ld^1);
   return sensor_data;
 }
 
