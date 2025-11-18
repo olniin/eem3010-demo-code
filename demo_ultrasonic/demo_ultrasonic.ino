@@ -24,10 +24,10 @@ void loop()
 {
   static uint16_t distance = 0;
   distance = get_sensor_distance(SONIC_TRIG_PIN, SONIC_ECHO_PIN);
+  delay(100);
   Serial.print("Distance: ");
   Serial.println(distance);
   (distance < 20) ? digitalWrite(BUZZER_PIN, 1) : digitalWrite(BUZZER_PIN, 0);
-  delay(100);
 }
 
 /*
